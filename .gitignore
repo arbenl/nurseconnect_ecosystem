@@ -8,3 +8,9 @@
 /.melos_tool_state/
 *.log
 *.key
+
+# Node.js dependencies
+**/node_modules/
+
+# Emulator test folder
+**/nurseconnect-emulator-tests/
