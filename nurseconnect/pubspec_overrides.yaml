@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: nurseconnect_shared
+dependency_overrides:
+  nurseconnect_shared:
+    path: ../nurseconnect_shared

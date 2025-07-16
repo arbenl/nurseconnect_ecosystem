@@ -1,0 +1,10 @@
+/.dart_tool/
+
+/build/
+/.packages
+/pubspec.lock
+/.idea/
+/*.iml
+/.melos_tool_state/
+*.log
+*.key

@@ -1,0 +1,174 @@
+melos run analyze
+  └> melos exec -- "flutter analyze"
+     └> RUNNING
+
+$ melos exec
+  └> flutter analyze
+     └> RUNNING (in 3 packages)
+
+--------------------------------------------------------------------------------
+[nurseconnect_shared]: Analyzing nurseconnect_shared...                                
+[nurseconnect]: Analyzing nurseconnect...                                       
+[nurseconnect_patient]: Analyzing nurseconnect_patient...                               
+[nurseconnect_shared]: 
+[nurseconnect_shared]: No issues found! (ran in 1.2s)
+[nurseconnect_patient]: 
+[nurseconnect_patient]: 
+[nurseconnect_patient]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:84:15 • missing_required_argument
+[nurseconnect_patient]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:84:37 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:90:15 • missing_required_argument
+[nurseconnect_patient]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:90:37 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'auth' isn't defined • lib/core/dependency_injection/injection_container.dart:90:54 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'functions' isn't defined • lib/core/dependency_injection/injection_container.dart:90:66 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'storage' isn't defined • lib/core/dependency_injection/injection_container.dart:90:83 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:96:15 • missing_required_argument
+[nurseconnect_patient]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:96:44 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:102:15 • missing_required_argument
+[nurseconnect_patient]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:102:37 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:135:11 • missing_required_argument
+[nurseconnect_patient]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:135:37 • undefined_named_parameter
+[nurseconnect_patient]:   error • The named parameter 'firebaseAuth' isn't defined • lib/core/dependency_injection/injection_container.dart:135:54 • undefined_named_parameter
+[nurseconnect_patient]:   error • The name 'PatientAuthRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:143:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'PatientAuthRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:144:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'UserRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:146:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'UserRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:147:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'ProfileRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:149:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'ProfileRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:150:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'HistoryRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:152:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'HistoryRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:153:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'ServiceRequestRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:155:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'ServiceRequestRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:156:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'PaymentRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:158:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'PaymentRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:159:11 • undefined_function
+[nurseconnect_patient]:   error • The name 'NursingServiceRemoteDataSource' isn't a type, so it can't be used as a type argument • lib/core/dependency_injection/injection_container.dart:161:28 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The function 'NursingServiceRemoteDataSourceImpl' isn't defined • lib/core/dependency_injection/injection_container.dart:162:11 • undefined_function
+[nurseconnect_patient]:   error • 'PatientAuthRepositoryImpl.getUserRole' ('Future<Either<Failure, UserRole>> Function(String)') isn't a valid override of 'PatientAuthRepository.getUserRole' ('Future<UserRole> Function(String)') • lib/features/auth/data/repositories/patient_auth_repository_impl.dart:13:37 • invalid_override
+[nurseconnect_patient]:   error • The name 'Either' isn't a type, so it can't be used as a type argument • lib/features/auth/domain/repositories/patient_auth_repository.dart:13:10 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The name 'Failure' isn't a type, so it can't be used as a type argument • lib/features/auth/domain/repositories/patient_auth_repository.dart:13:17 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The name 'Either' isn't a type, so it can't be used as a type argument • lib/features/auth/domain/repositories/user_repository.dart:6:10 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The name 'Failure' isn't a type, so it can't be used as a type argument • lib/features/auth/domain/repositories/user_repository.dart:6:17 • non_type_as_type_argument
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:13:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'login_event.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/login_bloc.dart:13:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:14:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'login_state.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/login_bloc.dart:14:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/registration_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'registration_event.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/registration_bloc.dart:10:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/registration_bloc.dart:11:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'registration_state.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/registration_bloc.dart:11:8 • export_of_non_library
+[nurseconnect_patient]:   error • The name 'Either' isn't a type, so it can't be used as a type argument • lib/features/history/domain/repositories/history_repository.dart:4:10 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The name 'Failure' isn't a type, so it can't be used as a type argument • lib/features/history/domain/repositories/history_repository.dart:4:17 • non_type_as_type_argument
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:9:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'history_event.dart' can't have a part-of directive • lib/features/history/presentation/bloc/history_bloc.dart:9:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'history_state.dart' can't have a part-of directive • lib/features/history/presentation/bloc/history_bloc.dart:10:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/home/presentation/bloc/home_bloc.dart:14:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'home_event.dart' can't have a part-of directive • lib/features/home/presentation/bloc/home_bloc.dart:14:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/home/presentation/bloc/home_bloc.dart:15:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'home_state.dart' can't have a part-of directive • lib/features/home/presentation/bloc/home_bloc.dart:15:8 • export_of_non_library
+[nurseconnect_patient]:   error • The method 'toMap' isn't defined for the type 'PaymentMethod' • lib/features/payment/data/datasources/payment_remote_data_source_impl.dart:45:44 • undefined_method
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/payment/presentation/bloc/payment_bloc.dart:9:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'payment_event.dart' can't have a part-of directive • lib/features/payment/presentation/bloc/payment_bloc.dart:9:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/payment/presentation/bloc/payment_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'payment_state.dart' can't have a part-of directive • lib/features/payment/presentation/bloc/payment_bloc.dart:10:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:9:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'profile_event.dart' can't have a part-of directive • lib/features/profile/presentation/bloc/profile_bloc.dart:9:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'profile_state.dart' can't have a part-of directive • lib/features/profile/presentation/bloc/profile_bloc.dart:10:8 • export_of_non_library
+[nurseconnect_patient]:   error • The name 'Either' isn't a type, so it can't be used as a type argument • lib/features/select_service/domain/repositories/nursing_service_repository.dart:4:10 • non_type_as_type_argument
+[nurseconnect_patient]:   error • The name 'Failure' isn't a type, so it can't be used as a type argument • lib/features/select_service/domain/repositories/nursing_service_repository.dart:4:17 • non_type_as_type_argument
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/select_service/presentation/bloc/select_service_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'select_service_event.dart' can't have a part-of directive • lib/features/select_service/presentation/bloc/select_service_bloc.dart:10:8 • export_of_non_library
+[nurseconnect_patient]:   error • Export directives must precede part directives • lib/features/select_service/presentation/bloc/select_service_bloc.dart:11:1 • export_directive_after_part_directive
+[nurseconnect_patient]:   error • The exported library 'select_service_state.dart' can't have a part-of directive • lib/features/select_service/presentation/bloc/select_service_bloc.dart:11:8 • export_of_non_library
+[nurseconnect_patient]: 
+[nurseconnect]: 
+[nurseconnect]: 
+[nurseconnect]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:86:15 • missing_required_argument
+[nurseconnect]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:87:7 • undefined_named_parameter
+[nurseconnect]:   error • The named parameter 'firebaseFunctions' isn't defined • lib/core/dependency_injection/injection_container.dart:88:7 • undefined_named_parameter
+[nurseconnect]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:95:15 • missing_required_argument
+[nurseconnect]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:95:37 • undefined_named_parameter
+[nurseconnect]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:101:15 • missing_required_argument
+[nurseconnect]:   error • The named parameter 'authRepository' isn't defined • lib/core/dependency_injection/injection_container.dart:101:37 • undefined_named_parameter
+[nurseconnect]:   error • The named parameter 'remoteDataSource' is required, but there's no corresponding argument • lib/core/dependency_injection/injection_container.dart:128:11 • missing_required_argument
+[nurseconnect]:   error • The named parameter 'firestore' isn't defined • lib/core/dependency_injection/injection_container.dart:128:31 • undefined_named_parameter
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:8:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'active_service_event.dart' can't have a part-of directive • lib/features/active_service/presentation/bloc/active_service_bloc.dart:10:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/active_service/presentation/bloc/active_service_bloc.dart:11:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'active_service_state.dart' can't have a part-of directive • lib/features/active_service/presentation/bloc/active_service_bloc.dart:11:8 • export_of_non_library
+[nurseconnect]:   error • Undefined class 'GeoPoint' • lib/features/auth/data/repositories/nurse_repository_impl.dart:31:14 • undefined_class
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:8:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:9:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:11:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'login_event.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/login_bloc.dart:11:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/login_bloc.dart:12:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'login_state.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/login_bloc.dart:12:8 • export_of_non_library
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:8:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'nurse_registration_event.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:10:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:11:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'nurse_registration_state.dart' can't have a part-of directive • lib/features/auth/presentation/bloc/nurse_registration_bloc.dart:11:8 • export_of_non_library
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:9:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'history_event.dart' can't have a part-of directive • lib/features/history/presentation/bloc/history_bloc.dart:9:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/history/presentation/bloc/history_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'history_state.dart' can't have a part-of directive • lib/features/history/presentation/bloc/history_bloc.dart:10:8 • export_of_non_library
+[nurseconnect]:   error • The part-of directive must be the only directive in a part • lib/features/history/presentation/bloc/history_state.dart:2:1 • non_part_of_directive_in_part
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:8:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:9:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:10:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:11:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:12:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:13:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:14:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:15:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:16:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:18:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'nurse_home_event.dart' can't have a part-of directive • lib/features/home/presentation/bloc/nurse_home_bloc.dart:18:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/home/presentation/bloc/nurse_home_bloc.dart:19:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'nurse_home_state.dart' can't have a part-of directive • lib/features/home/presentation/bloc/nurse_home_bloc.dart:19:8 • export_of_non_library
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:4:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:5:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:6:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Import directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:7:1 • import_directive_after_part_directive
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:9:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'profile_event.dart' can't have a part-of directive • lib/features/profile/presentation/bloc/profile_bloc.dart:9:8 • export_of_non_library
+[nurseconnect]:   error • Export directives must precede part directives • lib/features/profile/presentation/bloc/profile_bloc.dart:10:1 • export_directive_after_part_directive
+[nurseconnect]:   error • The exported library 'profile_state.dart' can't have a part-of directive • lib/features/profile/presentation/bloc/profile_bloc.dart:10:8 • export_of_non_library
+[nurseconnect]:   error • Undefined class 'NurseProfileData' • lib/features/profile/presentation/bloc/profile_state.dart:15:9 • undefined_class
+[nurseconnect]:   error • The method 'ErrorDisplayWidget' isn't defined for the type 'NurseProfileScreen' • lib/features/profile/presentation/screens/nurse_profile_screen.dart:63:22 • undefined_method
+[nurseconnect]:   error • The argument type 'Null' can't be assigned to the parameter type 'String'.  • test/features/auth/presentation/bloc/login_bloc_test.dart:50:18 • argument_type_not_assignable
+[nurseconnect]:   error • The argument type 'Null' can't be assigned to the parameter type 'String'.  • test/features/auth/presentation/bloc/login_bloc_test.dart:51:21 • argument_type_not_assignable
+[nurseconnect]:   error • The argument type 'Null' can't be assigned to the parameter type 'String'.  • test/features/auth/presentation/bloc/login_bloc_test.dart:54:45 • argument_type_not_assignable
+[nurseconnect]: 
+--------------------------------------------------------------------------------
+
+$ melos exec
+  └> flutter analyze
+     └> FAILED (in 2 packages)
+        └> nurseconnect_patient (with exit code 1)
+        └> nurseconnect (with exit code 1)
+
+melos run analyze
+  └> melos exec -- "flutter analyze"
+     └> FAILED

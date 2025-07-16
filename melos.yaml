@@ -1,0 +1,51 @@
+name: nurseconnect_ecosystem
+
+packages:
+  - nurseconnect
+  - nurseconnect_patient
+  - nurseconnect_shared
+  - seeding-scripts
+
+scripts:
+  bootstrap:
+    run: melos exec -- "flutter pub get"
+    description: Bootstrap the workspace by running "flutter pub get" in all packages.
+
+  analyze:
+    run: melos exec -- "flutter analyze"
+    description: Run "flutter analyze" in all packages.
+
+  test:
+    run: melos exec -- "flutter test"
+    description: Run "flutter test" in all packages.
+
+  clean:
+    run: melos exec -- "flutter clean"
+    description: Run "flutter clean" in all packages.
+
+  e2e_test:
+    run: |
+      set -e
+      echo "INFO: Attempting to close any lingering emulator ports..."
+      kill -9 $(lsof -t -i:8081) || true
+      kill -9 $(lsof -t -i:9098) || true
+      kill -9 $(lsof -t -i:5001) || true
+      kill -9 $(lsof -t -i:9001) || true
+      echo "INFO: Ports cleaned."
+
+      echo "INFO: Starting Firebase Emulators in the background..."
+      firebase emulators:start &
+      EMULATOR_PID=$!
+
+
+    description: Runs the full end-to-end test suite against the local emulators.
+    stop_emulators:
+      run: |
+        echo "INFO: Shutting down any running Firebase emulators..."
+        kill -9 $(lsof -t -i:8081) || true
+        kill -9 $(lsof -t -i:9098) || true
+        kill -9 $(lsof -t -i:5001) || true
+        kill -9 $(lsof -t -i:9001) || true
+        echo "INFO: Emulator processes stopped."
+      description: Finds and stops any running Firebase emulators.
+

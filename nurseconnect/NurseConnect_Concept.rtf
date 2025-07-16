@@ -1,0 +1,245 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fmodern\fcharset0 Courier;
+\f3\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Here\'92s a summary of our development process for the NurseConnect app so far:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Project Goal & Initial Plan:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Concept:
+\f0\b0  NurseConnect - On-demand nursing service app.\
+\ls1\ilvl1
+\f1\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Platform:
+\f0\b0  Flutter (iOS & Android).\
+\ls1\ilvl1
+\f1\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 MVP Focus:
+\f0\b0  Patient requests service -> Backend matches & assigns nurse.\
+\ls1\ilvl1
+\f1\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initial Backend Idea:
+\f0\b0  Cloud Run + Cloud SQL/PostGIS.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Flutter Project Setup:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Confirmed Flutter/Android Studio readiness.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Created 
+\f2\fs26 nurseconnect
+\f0\fs24  project.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Established feature-first folder structure (
+\f2\fs26 core
+\f0\fs24 , 
+\f2\fs26 features/auth
+\f0\fs24 , 
+\f2\fs26 features/home
+\f0\fs24 , etc.) and layers (presentation, domain, data).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Added core dependencies (
+\f2\fs26 bloc
+\f0\fs24 , 
+\f2\fs26 getit
+\f0\fs24 , 
+\f2\fs26 equatable
+\f0\fs24 ). Set up GetIt (
+\f2\fs26 injection_container.dart
+\f0\fs24 ).\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Backend Pivot to Firebase:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 After discussing requirements (nurse acceptance workflow, 5km radius sufficient for MVP geo-query, ASAP constraints), we 
+\f1\b switched to Firebase
+\f0\b0  (Auth, Firestore, Cloud Functions) for faster development of the required real-time features.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Firebase Setup & Integration:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Created Firebase project (
+\f2\fs26 nurse-642a7
+\f0\fs24 ).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Configured Flutter app via 
+\f2\fs26 flutterfire configure
+\f0\fs24 , generating 
+\f2\fs26 firebase_options.dart
+\f0\fs24 . Fixed related CLI issues (wrong directory, web fail, missing file, npm install fail, Node.js/npm PATH).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Added Firebase Flutter dependencies (
+\f2\fs26 firebase_core
+\f0\fs24 , 
+\f2\fs26 firebase_auth
+\f0\fs24 , 
+\f2\fs26 cloud_firestore
+\f0\fs24 ).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initialized Firebase in 
+\f2\fs26 main.dart
+\f0\fs24 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Authentication & User Data:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Built Login/Registration screens and Blocs.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Refactored Blocs (
+\f2\fs26 LoginBloc
+\f0\fs24 , 
+\f2\fs26 RegistrationBloc
+\f0\fs24 ) to use 
+\f1\b FirebaseAuth
+\f0\b0 . Fixed associated errors (
+\f2\fs26 Undefined name
+\f0\fs24 , constructor issues).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Defined 
+\f2\fs26 UserData
+\f0\fs24  model (fixed syntax error).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Implemented saving user details to Firestore 
+\f2\fs26 /users/\{uid\}
+\f0\fs24  on registration.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Corrected Firestore Security Rules for 
+\f2\fs26 /users
+\f0\fs24  access, resolving permission errors.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	6	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigation:
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Refactored to use 
+\f2\fs26 go_router
+\f0\fs24 , defining routes in 
+\f2\fs26 app_router.dart
+\f0\fs24 .\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Updated 
+\f2\fs26 main.dart
+\f0\fs24  to use 
+\f2\fs26 MaterialApp.router
+\f0\fs24 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	7	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Service Request Flow (Patient Side):
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Created basic 
+\f2\fs26 HomeScreen
+\f0\fs24  with Logout.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Added 
+\f2\fs26 geolocator
+\f0\fs24 , implemented location fetching on "Request Service" button press.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Defined 
+\f2\fs26 NurseData
+\f0\fs24 , 
+\f2\fs26 ServiceRequestData
+\f0\fs24  models.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Created 
+\f2\fs26 UserRepository
+\f0\fs24  & 
+\f2\fs26 ServiceRequestRepository
+\f0\fs24  (interfaces & Firestore implementations). Updated 
+\f2\fs26 HomeBloc
+\f0\fs24  accordingly. Fixed GetIt registration and import errors.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Implemented logic: Request Button -> Get Location -> Get UserData -> Create 
+\f2\fs26 serviceRequests
+\f0\fs24  doc in Firestore (
+\f2\fs26 status: 'pending'
+\f0\fs24 ). Fixed Firestore write permissions.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	8	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Cloud Functions (Backend Logic - TypeScript):
+\f0\b0 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initialized Cloud Functions environment (
+\f2\fs26 functions
+\f0\fs24  folder). Added sample nurse data manually to Firestore (including 
+\f2\fs26 geohash
+\f0\fs24 ).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Refactored code structure into 
+\f2\fs26 index.ts
+\f0\fs24  (exports) and 
+\f2\fs26 request_handlers.ts
+\f0\fs24  (logic).\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Fixed Firebase Admin SDK initialization errors (
+\f2\fs26 FirebaseAppError
+\f0\fs24 ) after refactoring by ensuring 
+\f2\fs26 initializeApp
+\f0\fs24  runs once in 
+\f2\fs26 index.ts
+\f0\fs24  and 
+\f2\fs26 db
+\f0\fs24  is accessed inside handlers.\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Fixed ESLint errors.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1
+\f3\b\fs26 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 onNewServiceRequest
+\f1\fs24  Function:
+\f0\b0  Implemented, deployed, and tested successfully. It triggers, finds nearby available nurses (using geo-query), selects the nearest, and atomically updates request status to 
+\f2\fs26 offered
+\f0\fs24  and nurse availability to 
+\f2\fs26 false
+\f0\fs24 .\
+\ls1\ilvl1
+\f3\b\fs26 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 respondToOffer
+\f1\fs24  Function:
+\f0\b0  Fully implemented the logic (including transaction) in 
+\f2\fs26 request_handlers.ts
+\f0\fs24  to handle 'accepted'/'rejected' responses from nurses. Exported correctly from 
+\f2\fs26 index.ts
+\f0\fs24 . Code review confirmed alignment with plan. This function is 
+\f1\b coded but not yet deployed or tested
+\f0\b0 .\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 \strokec2 Current Status:
+\f0\b0  The Flutter app allows users to register, log in, and successfully submit a service request which gets recorded in Firestore. The backend 
+\f2\fs26 onNewServiceRequest
+\f0\fs24  function correctly processes this request up to the point of finding the nearest nurse and marking the request as 'offered' to them, updating relevant Firestore documents atomically. The backend code to handle the nurse's response (
+\f2\fs26 respondToOffer
+\f0\fs24 ) is written and reviewed. All known build/lint/runtime errors are resolved.\
+}
